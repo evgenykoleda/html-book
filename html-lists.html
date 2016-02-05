@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>HTML справочник - Списки</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
@@ -32,8 +33,8 @@
         Заканчивается список закрывающимся тегом &lt/ul&gt
         Элемент списка может содержать вложенный список точно таким-же образом.
     </p>
-    <p>
-        Пример:
+
+    <p>Пример:</p>
 <pre>
 &ltul&gt
 &ltli&gt
@@ -58,9 +59,8 @@
 &lt/li&gt
 &lt/ul&gt
 </pre>
-    </p>
-    <p>
-    Результат:
+
+    <p>Результат:</p>
     <ul>
         <li>
             Птицы
@@ -76,8 +76,7 @@
         <li>
             Млекопитающие
         </li>
-        </ul>
-    </p>
+    </ul>
 
     <h2 id="ordered-lists">Упорядоченные списки</h2>
     <p>
@@ -85,13 +84,12 @@
         Способ разметки идентичен маркированному списку: открывающий тег списка &ltol&gt, тег элемента списка &ltli&gt.
         Каждый элемент списка увеличивает свой номер на еденицу относительно предыдущего.
     </p>
-    <p>
-        Атрибуты:
-        <dl>
-            <dt>start</dt>
-            <dd>Номер первого элемента списка. По умолчанию равен 1.</dd>
-        </dl>
-    </p>
+
+    <p>Атрибуты:</p>
+    <dl>
+        <dt>start</dt>
+        <dd>Номер первого элемента списка. По умолчанию равен 1.</dd>
+    </dl>
 
     <h2 id="definition-lists">Списки определений</h2>
     <p>
@@ -99,28 +97,26 @@
         Список начинается открывающим тегом &ltdl&gt, каждый элемент задается парой вложенных тегов &ltdt&gt и &ltdd&gt.
         С помощью тега &ltdt&gt задается термин, с помощью &ltdd&gt его определение.
     </p>
-    <p>
-        Пример:
+
+    <p>Пример:</p>
 <pre>
 &ltdl&gt
-&ltdt&gtHTML&lt/dt&gt
-&ltdd&gtHypertext Markup Language - язык гипертекстовой разметки&lt/dd&gt
+    &ltdt&gtHTML&lt/dt&gt
+    &ltdd&gtHypertext Markup Language - язык гипертекстовой разметки&lt/dd&gt
 
-&ltdt&gtCSS&lt/dt&gt
-&ltdd&gtCascading style sheets - каскадные таблицы стилей&lt/dd&gt
+    &ltdt&gtCSS&lt/dt&gt
+    &ltdd&gtCascading style sheets - каскадные таблицы стилей&lt/dd&gt
 &lt/dl&gt
 </pre>
-    </p>
-    <p>
-        Результат:
-        <dl>
-            <dt>HTML</dt>
-            <dd>Hypertext Markup Language - язык гипертекстовой разметки</dd>
 
-            <dt>CSS</dt>
-            <dd>Cascading style sheets - каскадные таблицы стилей</dd>
-        </dl>
-    </p>
+    <p>Результат:</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hypertext Markup Language - язык гипертекстовой разметки</dd>
+
+        <dt>CSS</dt>
+        <dd>Cascading style sheets - каскадные таблицы стилей</dd>
+    </dl>
 
     <a href="#heading">В начало</a>
 
