@@ -1,5 +1,41 @@
 body {
-    font: 20px Georgia, serif;
-    background-color: lightyellow;
-    padding: 0 10px;
+    font: 1.3em Georgia, serif;
+    background-color: lightgoldenrodyellow;
+    padding: 0 15px;
+    line-height: 1.3em;
+}
+
+dt, dd {
+    padding: 7px 0 0 0;
+}
+
+.table-of-contents {
+    line-height: 1.5em;
+}
+
+.html-tag, .html-attribute, .css-property, .css-value {
+    font-family: Consolas, monospace;
+    font-weight: bold;
+}
+
+.html-code {
+    border: 1px solid gray;
+    border-radius: 12px;
+    padding: 15px 10px;
+    background-color: white;
+}
+
+.css-value-list  {
+    border-collapse: collapse;
+    border: 1px solid gray;
+    background-color: white;
+}
+
+.css-value-list td {
+    border-top: 1px solid gray;
+}
+
+.css-value-list th, td {
+    padding: 10px;
+    text-align: left;
 }
