@@ -1,19 +1,23 @@
 body {
     font: 1.3em Georgia, serif;
     background-color: lightgoldenrodyellow;
-    padding: 0 15px;
     line-height: 1.3em;
 }
 
+/* TODO: remove */
 dt, dd {
     padding: 7px 0 0 0;
 }
 
-.table-of-contents {
-    line-height: 1.5em;
+.article-content {
+    padding: 0 15px;
 }
 
-.html-tag, .html-attribute, .css-property, .css-value {
+.article-table-of-contents {
+    line-height: 1.4em;
+}
+
+code {
     font-family: Consolas, monospace;
     font-weight: bold;
 }

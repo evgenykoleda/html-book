@@ -7,47 +7,47 @@
 </head>
 <body>
 
-    <h1 id="heading">Таблицы</h1>
-    <p>
-        Таблицы предназначаются для структурирования информации в виде строк и столбцов.
-        Каждый столбец таблицы имеет заголовок, располагающийся над остальными строками столбца.
-        Таблицы являются очень мощным инструментом для формирования сдвигов, отступов и выравниваний.
-        Благодаря этому их стали применять как каркас для построения структуры всей страницы.
-        Такой подход позволяет решать некоторые задачи проще по сравнению с тегом <code class="html-tag">&lt;div&gt;</code>.
-        Однако нужно учитывать что изначально таблицы не предназначались для этой цели,
-        и существуют некоторые издержки при использовании такого подхода.
-    </p>
+    <div class="article-content">
+        <h1 id="heading">Таблицы</h1>
+        <p>
+            Таблицы предназначаются для структурирования информации в виде строк и столбцов.
+            Каждый столбец таблицы имеет заголовок, располагающийся над остальными строками столбца.
+            Таблицы являются очень мощным инструментом для формирования сдвигов, отступов и выравниваний.
+            Благодаря этому их стали применять как каркас для построения структуры всей страницы.
+            Такой подход позволяет решать некоторые задачи проще по сравнению с тегом <code>&lt;div&gt;</code>.
+            Однако нужно учитывать что изначально таблицы не предназначались для этой цели,
+            и существуют некоторые издержки при использовании такого подхода.
+        </p>
 
-    <h2>Оглавление</h2>
-    <ol class="table-of-contents">
-        <li>
-            <a href="#tags">Теги</a>
+        <h2>Оглавление</h2>
+        <ol class="article-table-of-contents">
+            <li>
+                <a href="#tags">Теги</a>
 
-            <ol>
-                <li>
-                    <a href="#tags-example">Пример</a>
-                </li>
-            </ol>
-        </li>
-        <li>
-            <a href="#attributes">Атрибуты</a>
-        </li>
-        <li>
-            <a href="#styles">Стили</a>
-        </li>
-    </ol>
+                <ol>
+                    <li>
+                        <a href="#tags-example">Пример</a>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <a href="#attributes">Атрибуты</a>
+            </li>
+            <li>
+                <a href="#styles">Стили</a>
+            </li>
+        </ol>
 
-    <h2 id="tags">Теги</h2>
-    <p>
-        Описание таблицы начинается с тега <code class="html-tag">&lt;table&gt;</code>.
-        Таблица в свою очередь состоит из множества тегов <code class="html-tag">&lt;tr&gt;</code>,
-        каждый из которых отвечает за новую строку таблицы.
-        Каждая строка таблицы состоит из столбцов, которые задаются тегом <code class="html-tag">&lt;td&gt;</code>.
-        Первая строка состоит из ячеек-заголовков, которые задаются тегом <code class="html-tag">&lt;th&gt;</code>.
-        С помощью вложенного тега таблицы <code class="html-tag">&lt;caption&gt;</code> задается заголовок таблицы.
-    </p>
+        <h2 id="tags">Теги</h2>
+        <p>
+            Описание таблицы начинается с тега <code>&lt;table&gt;</code>.
+            Таблица в свою очередь состоит из множества тегов <code>&lt;tr&gt;</code>, каждый из которых отвечает за новую строку таблицы.
+            Каждая строка таблицы состоит из столбцов, которые задаются тегом <code>&lt;td&gt;</code>.
+            Первая строка состоит из ячеек-заголовков, которые задаются тегом <code>&lt;th&gt;</code>.
+            С помощью вложенного тега таблицы <code>&lt;caption&gt;</code> задается заголовок таблицы.
+        </p>
 
-    <h3 id="tags-example">Пример</h3>
+        <h3 id="tags-example">Пример</h3>
 <pre class="html-code">
 &lt;table&gt;
     &lt;caption&gt;Веб-технологии&lt;/caption&gt;
@@ -66,183 +66,197 @@
 &lt;/table&gt;
 </pre>
 
-    <h2 id="attributes">Атрибуты</h2>
-    <dl>
-        <dt>
-            <code class="html-attribute">colspan</code>
-        </dt>
-        <dd>
-            Задает количество колонок, на которые растягивается выбранная ячейка.
-            Применяется к тегам <code class="html-tag">&lt;th&gt;</code> и <code class="html-tag">&lt;td&gt;</code>.
-        </dd>
+        <h2 id="attributes">Атрибуты</h2>
+        <dl>
+            <dt>
 
-        <dt>
-            <code class="html-attribute">rowspan</code>
-        </dt>
-        <dd>
-            Задает количество ячеек строк, на которые растягивается выбранная ячейка.
-            Применяется к тегам <code class="html-tag">&lt;th&gt;</code> и <code class="html-tag">&lt;td&gt;</code>.
-        </dd>
-    </dl>
+                <code>colspan</code>
+            </dt>
+            <dd>
+                Задает количество колонок, на которые растягивается выбранная ячейка.
+                Применяется к тегам <code>&lt;th&gt;</code> и <code>&lt;td&gt;</code>.
+            </dd>
 
-    <h2 id="styles">Стили</h2>
-    <dl>
-        <dt>
-            <code class="css-property">border-collapse</code>
-        </dt>
-        <dd>
-            Задает способ совместного отображения рамки таблицы и рамок ячеек.
-            Применяется к тегу <code class="html-tag">&lt;table&gt;</code>.
-        </dd>
-        <dd>
-            <table class="css-value-list">
-                <tr>
-                    <th>Значение</th>
-                    <th>Описание</th>
-                </tr>
-                <tr>
-                    <td>
-                        <code class="css-value">separate</code>
-                    </td>
-                    <td>
-                        Рамки таблицы и ячеек отображаются отдельно.
-                        Значение по умолчанию.
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <code class="css-value">collapse</code>
-                    </td>
-                    <td>
-                        Рамки таблицы и ячеек накладываются друг на друга.
-                    </td>
-                </tr>
-            </table>
-        </dd>
+            <dt>
+                <code>rowspan</code>
+            </dt>
+            <dd>
+                Задает количество ячеек строк, на которые растягивается выбранная ячейка.
+                Применяется к тегам <code>&lt;th&gt;</code> и <code>&lt;td&gt;</code>.
+            </dd>
+        </dl>
 
-        <dt>
-            <code class="css-property">padding</code>
-        </dt>
-        <dd>
-            Задает отступ текста ячейки относительно её границ.
-            Применяется к тегам <code class="html-tag">&lt;th&gt;</code> и <code class="html-tag">&lt;td&gt;</code>.
-        </dd>
+        <h2 id="styles">Стили</h2>
+        <dl>
+            <dt>
+                <code>border-collapse</code>
+            </dt>
+            <dd>
+                Задает способ совместного отображения рамки таблицы и рамок ячеек.
+                Применяется к тегу <code>&lt;table&gt;</code>.
+            </dd>
+            <dd>
+                <table class="css-value-list">
+                    <tr>
+                        <th>Значение</th>
+                        <th>Описание</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>separate</code>
+                        </td>
+                        <td>
+                            Рамки таблицы и ячеек отображаются отдельно.
+                            Значение по умолчанию.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>collapse</code>
+                        </td>
+                        <td>
+                            Рамки таблицы и ячеек накладываются друг на друга.
+                        </td>
+                    </tr>
+                </table>
+            </dd>
 
-        <dt>
-            <code class="css-property">text-align</code>
-        </dt>
-        <dd>
-            Задает выравнивание текста ячейки или заголовка таблицы по горизонтали.
-            Применяется к тегам <code class="html-tag">&lt;th&gt;</code>, <code class="html-tag">&lt;td&gt;</code> и
-            <code class="html-tag">&lt;caption&gt;</code>.
-        </dd>
-        <dd>
-            <table class="css-value-list">
-                <tr>
-                    <th>Значение</th>
-                    <th>Описание</th>
-                </tr>
-                <tr>
-                    <td>
-                        <code class="css-value">left</code>
-                    </td>
-                    <td>Задает выравнивание текста по левому краю.</td>
-                </tr>
-                <tr>
-                    <td>
-                        <code class="css-value">right</code>
-                    </td>
-                    <td>Задает выравнивание текста по правому краю.</td>
-                </tr>
-                <tr>
-                    <td>
-                        <code class="css-value">center</code>
-                    </td>
-                    <td>Задает выравнивание текста по центру.</td>
-                </tr>
-            </table>
-        </dd>
+            <dt>
+                <code>padding</code>
+            </dt>
+            <dd>
+                Задает отступ текста ячейки относительно её границ.
+                Применяется к тегам <code>&lt;th&gt;</code> и <code>&lt;td&gt;</code>.
+            </dd>
 
-        <dt>
-            <code class="css-property">vertical-align</code>
-        </dt>
-        <dd>
-            Задает выравнивание текста ячейки по вертикали.
-            Применяется к тегам <code class="html-tag">&lt;th&gt;</code> и <code class="html-tag">&lt;td&gt;</code>.
-        </dd>
-        <dd>
-            <table class="css-value-list">
-                <tr>
-                    <th>Значение</th>
-                    <th>Описание</th>
-                </tr>
-                <tr>
-                    <td>
-                        <code class="css-value">top</code>
-                    </td>
-                    <td>Задает выравнивание текста по верхнему краю.</td>
-                </tr>
-                <tr>
-                    <td>
-                        <code class="css-value">bottom</code>
-                    </td>
-                    <td>Задает выравнивание текста по нижнему краю.</td>
-                </tr>
-                <tr>
-                    <td>
-                        <code class="css-value">middle</code>
-                    </td>
-                    <td>Задает выравнивание текста посередине.</td>
-                </tr>
-            </table>
-        </dd>
+            <dt>
+                <code>text-align</code>
+            </dt>
+            <dd>
+                Задает выравнивание текста ячейки или заголовка таблицы по горизонтали.
+                Применяется к тегам <code>&lt;th&gt;</code>, <code>&lt;td&gt;</code> и <code>&lt;caption&gt;</code>.
+            </dd>
+            <dd>
+                <table class="css-value-list">
+                    <tr>
+                        <th>Значение</th>
+                        <th>Описание</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>left</code>
+                        </td>
+                        <td>Задает выравнивание текста по левому краю.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>right</code>
+                        </td>
+                        <td>
+                            Задает выравнивание текста по правому краю.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>center</code>
+                        </td>
+                        <td>
+                            Задает выравнивание текста по центру.
+                        </td>
+                    </tr>
+                </table>
+            </dd>
 
-        <dt>
-            <code class="css-property">caption-side</code>
-        </dt>
-        <dd>
-            Задает выравнивание заголовка таблицы по вертикали.
-            Применяется к тегу <code class="html-tag">&lt;caption&gt;</code>.
-        </dd>
-        <dd>
-            <table class="css-value-list">
-                <tr>
-                    <th>Значение</th>
-                    <th>Описание</th>
-                </tr>
-                <tr>
-                    <td>
-                        <code class="css-value">top</code>
-                    </td>
-                    <td>Задает выравнивание заголовка над таблицей.</td>
-                </tr>
-                <tr>
-                    <td>
-                        <code class="css-value">bottom</code>
-                    </td>
-                    <td>Задает выравнивание заголовка под таблицей.</td>
-                </tr>
-            </table>
-        </dd>
+            <dt>
+                <code>vertical-align</code>
+            </dt>
+            <dd>
+                Задает выравнивание текста ячейки по вертикали.
+                Применяется к тегам <code>&lt;th&gt;</code> и <code>&lt;td&gt;</code>.
+            </dd>
+            <dd>
+                <table class="css-value-list">
+                    <tr>
+                        <th>Значение</th>
+                        <th>Описание</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>top</code>
+                        </td>
+                        <td>
+                            Задает выравнивание текста по верхнему краю.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>bottom</code>
+                        </td>
+                        <td>
+                            Задает выравнивание текста по нижнему краю.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>middle</code>
+                        </td>
+                        <td>
+                            Задает выравнивание текста посередине.
+                        </td>
+                    </tr>
+                </table>
+            </dd>
 
-        <dt>
-            <code class="css-property">color</code>
-        </dt>
-        <dd>
-            Задает цвет текста ячейки или заголовка таблицы.
-            Применяется к тегам <code class="html-tag">&lt;th&gt;</code>, <code class="html-tag">&lt;td&gt;</code> и
-            <code class="html-tag">&lt;caption&gt;</code>.
-        </dd>
+            <dt>
+                <code>caption-side</code>
+            </dt>
+            <dd>
+                Задает выравнивание заголовка таблицы по вертикали.
+                Применяется к тегу <code>&lt;caption&gt;</code>.
+            </dd>
+            <dd>
+                <table class="css-value-list">
+                    <tr>
+                        <th>Значение</th>
+                        <th>Описание</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>top</code>
+                        </td>
+                        <td>
+                            Задает выравнивание заголовка над таблицей.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>bottom</code>
+                        </td>
+                        <td>
+                            Задает выравнивание заголовка под таблицей.
+                        </td>
+                    </tr>
+                </table>
+            </dd>
 
-        <dt>
-            <code class="css-property">background-color</code>
-        </dt>
-        <dd>
-            Задает цвет фона таблицы, строки, ячейки или заголовка.
-            Применяется к тегам <code class="html-tag">&lt;table&gt;</code>, <code class="html-tag">&lt;tr&gt;</code>,
-            <code class="html-tag">&lt;td&gt;</code>, <code class="html-tag">&lt;th&gt;</code> и <code class="html-tag">&lt;caption&gt;</code>.
-        </dd>
-    </dl>
+            <dt>
+                <code>color</code>
+            </dt>
+            <dd>
+                Задает цвет текста ячейки или заголовка таблицы.
+                Применяется к тегам <code>&lt;th&gt;</code>, <code>&lt;td&gt;</code> и <code>&lt;caption&gt;</code>.
+            </dd>
+
+            <dt>
+                <code>background-color</code>
+            </dt>
+            <dd>
+                Задает цвет фона таблицы, строки, ячейки или заголовка.
+                Применяется к тегам <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>,
+                <code>&lt;td&gt;</code>, <code>&lt;th&gt;</code> и <code>&lt;caption&gt;</code>.
+            </dd>
+        </dl>
+    </div>
 
     <a href="#heading">В начало</a>
     <a href="index.html">На главную</a>
