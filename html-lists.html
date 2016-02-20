@@ -16,17 +16,19 @@
         </p>
 
         <h2>Оглавление</h2>
-        <ol class="article-table-of-contents">
-            <li>
-                <a href="#unordered-list">Маркированный список</a>
-            </li>
-            <li>
-                <a href="#ordered-list">Упорядоченный список</a>
-            </li>
-            <li>
-                <a href="#definition-list">Список определений</a>
-            </li>
-        </ol>
+        <div class="navigation-base">
+            <ol>
+                <li>
+                    <a href="#unordered-list">Маркированный список</a>
+                </li>
+                <li>
+                    <a href="#ordered-list">Упорядоченный список</a>
+                </li>
+                <li>
+                    <a href="#definition-list">Список определений</a>
+                </li>
+            </ol>
+        </div>
 
         <h2 id="unordered-list">Маркированный список</h2>
         <p>
@@ -37,7 +39,7 @@
         </p>
 
         <h3>Пример</h3>
-<pre class="html-code">
+<pre class="code-block">
 &lt;ul&gt;
 &lt;li&gt;
     Птицы
@@ -88,7 +90,7 @@
         </p>
 
         <h3>Пример</h3>
-<pre class="html-code">
+<pre class="code-block">
 &lt;dl&gt;
     &lt;dt&gt;HTML&lt;/dt&gt;
     &lt;dd&gt;Hypertext Markup Language - язык гипертекстовой разметки&lt;/dd&gt;
@@ -100,7 +102,12 @@
 </pre>
     </div>
 
-    <a href="#heading">В начало</a>
+    <div class="navigation-base">
+        <a href="#heading">В начало</a>
+    </div>
+    <div class="navigation-base">
+        <a href="index.html">На главную</a>
+    </div>
 
 </body>
 </html>

@@ -21,20 +21,22 @@
         </p>
 
         <h2>Оглавление</h2>
-        <ol class="article-table-of-contents">
-            <li>
-                <a href="#replace-tabs-by-spaces">Замена табуляции пробелами</a>
-            </li>
-            <li>
-                <a href="#tags-auto-close">Автозакрытие тегов</a>
-            </li>
-            <li>
-                <a href="#auto-indent">Автоматический отступ</a>
-            </li>
-            <li>
-                <a href="#document-preview">Предпросмотр документа</a>
-            </li>
-        </ol>
+        <div class="navigation-base">
+            <ol>
+                <li>
+                    <a href="#replace-tabs-by-spaces">Замена табуляции пробелами</a>
+                </li>
+                <li>
+                    <a href="#tags-auto-close">Автозакрытие тегов</a>
+                </li>
+                <li>
+                    <a href="#auto-indent">Автоматический отступ</a>
+                </li>
+                <li>
+                    <a href="#document-preview">Предпросмотр документа</a>
+                </li>
+            </ol>
+        </div>
 
         <h2 id="replace-tabs-by-spaces">Замена табуляции пробелами</h2>
         <p>
@@ -59,7 +61,7 @@
         </p>
 
         <h3>Пример</h3>
-<pre class="html-code">
+<pre class="code-block">
 &lt;ul&gt;
     &lt;li&gt;
         &lt;p&gt;Пример короткого текста&lt;/p&gt;
@@ -89,8 +91,12 @@
         </p>
     </div>
 
-    <a href="#heading">В начало</a>
-    <a href="index.html">На главную</a>
+    <div class="navigation-base">
+        <a href="#heading">В начало</a>
+    </div>
+    <div class="navigation-base">
+        <a href="index.html">На главную</a>
+    </div>
 
 </body>
 </html>

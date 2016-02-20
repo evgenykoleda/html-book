@@ -7,11 +7,8 @@
 </head>
 <body>
 
-    <!-- TODO: Добавить статью об основных горячих клавишах текстового редактора -->
     <!-- TODO: Добавить ссылку на главную страницу на всех страницах -->
-    <!-- TODO: Стилизировать ссылки на всех страницах -->
     <!-- TODO: Добавить оглавление на всех страницах -->
-    <!-- TODO: Стилизировать текст навигации по меню -->
     <!-- TODO: Стилизировать картинку (setup-npp-editor.html) -->
     <!-- TODO: Добавить ключевые слова и дискрипшен для всего сайта в теге meta -->
 
@@ -21,44 +18,107 @@
         На данном ресурсе вы сможете найти материалы, посвящённые HTML вёрстке.
     </p>
 
-    <h2>Про HTML</h2>
-    <ul class="article-table-of-contents">
-        <li>
-            <a href="html-headers.html">Заголовки</a>
-        </li>
-        <li>
-            <a href="html-paragraphs.html">Абзацы</a>
-        </li>
-        <li>
-            <a href="html-lists.html">Списки</a>
-        </li>
-        <li>
-            <a href="html-text-highlighters.html">Текстовые маркеры</a>
-        </li>
-        <li>
-            <a href="html-quotes.html">Цитаты</a>
-        </li>
-        <li>
-            <a href="html-delimiters.html">Разделители</a>
-        </li>
-        <li>
-            <a href="html-tables.html">Таблицы</a>
-        </li>
-    </ul>
+    <!--<h2>Про HTML</h2>
+    <div class="navigation-base navigation-main">
+        <ul>
+            <li>
+                <a href="html-headers.html">Заголовки</a>
+            </li>
+            <li>
+                <a href="html-paragraphs.html">Абзацы</a>
+            </li>
+            <li>
+                <a href="html-lists.html">Списки</a>
+            </li>
+            <li>
+                <a href="html-text-highlighters.html">Текстовые маркеры</a>
+            </li>
+            <li>
+                <a href="html-quotes.html">Цитаты</a>
+            </li>
+            <li>
+                <a href="html-delimiters.html">Разделители</a>
+            </li>
+            <li>
+                <a href="#">Ссылки и картинки</a>
+            </li>
+            <li>
+                <a href="html-tables.html">Таблицы</a>
+            </li>
+            <li>
+                <a href="#">Формы</a>
+            </li>
+        </ul>
+    </div>
 
     <h2>Про CSS</h2>
-    <ul class="article-table-of-contents">
-        <li>
-            <a href="html-headers.html">Стилизирование текста</a>
-        </li>
-    </ul>
+    <div class="navigation-base navigation-main">
+        <ul class="navigation-base">
+            <li>
+                <a href="css-selectors.html">Селекторы</a>
+            </li>
+        </ul>
+    </div>
 
     <h2>Другое</h2>
-    <ul class="article-table-of-contents">
-        <li>
-            <a href="setup-npp-editor.html">Настройка Notepad++</a>
-        </li>
-    </ul>
+    <div class="navigation-base navigation-main">
+        <ul class="navigation-base">
+            <li>
+                <a href="setup-npp-editor.html">Настройка Notepad++</a>
+            </li>
+        </ul>
+    </div>-->
+
+    <div class="menu navigation-base">
+        <div class="menu-item menu-item-root">
+            <span>HTML</span>
+            <div class="menu">
+                <div class="menu-item">
+                    <a href="html-headers.html"><span>Заголовки</span></a>
+                </div>
+                <div class="menu-item">
+                    <a href="html-paragraphs.html"><span>Абзацы</span></a>
+                </div>
+                <div class="menu-item">
+                    <a href="html-lists.html"><span>Списки</span></a>
+                </div>
+                <div class="menu-item">
+                    <a href="html-text-highlighters.html"><span>Текстовые маркеры</span></a>
+                </div>
+                <div class="menu-item">
+                    <a href="html-quotes.html"><span>Цитаты</span></a>
+                </div>
+                <div class="menu-item">
+                    <a href="html-delimiters.html"><span>Разделители</span></a>
+                </div>
+                <div class="menu-item">
+                    <a href="#"><span>Ссылки и картинки</span></a>
+                </div>
+                <div class="menu-item">
+                    <a href="html-tables.html"><span>Таблицы</span></a>
+                </div>
+                <div class="menu-item">
+                    <a href="#"><span>Формы</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item menu-item-root">
+            <span>CSS</span>
+            <div class="menu">
+                <div class="menu-item">
+                    <a href="css-selectors.html">Селекторы</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item menu-item-root">
+            <span>Другое</span>
+            <div class="menu">
+                <div class="menu-item">
+                    <a href="setup-npp-editor.html">Настройка Notepad++</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>

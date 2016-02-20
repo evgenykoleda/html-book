@@ -4,17 +4,49 @@ body {
     line-height: 1.3em;
 }
 
+.navigation-base {
+    line-height: 1.4em;
+}
+
+.navigation-base a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+.navigation-base a:hover {
+    color: red;
+    text-shadow: 2px 2px 5px black;
+}
+
+.navigation-main ul {
+    list-style: square;
+}
+
+.menu-item-root {
+    position: relative;
+    display: inline-block;
+}
+
+.menu .menu {
+    display: none;
+    position: absolute;
+}
+
+.menu .menu-item:hover > .menu {
+    display: block;
+}
+
 /* TODO: remove */
 dt, dd {
-    padding: 7px 0 0 0;
+    padding: 3px;
+}
+
+dd + dt {
+    padding-top: 10px;
 }
 
 .article-content {
     padding: 0 15px;
-}
-
-.article-table-of-contents {
-    line-height: 1.4em;
 }
 
 code {
@@ -22,24 +54,29 @@ code {
     font-weight: bold;
 }
 
-.html-code {
+.code-block {
     border: 1px solid gray;
     border-radius: 12px;
     padding: 15px 10px;
     background-color: white;
 }
 
-.css-value-list  {
+.list-box table {
     border-collapse: collapse;
     border: 1px solid gray;
     background-color: white;
 }
 
-.css-value-list td {
+.list-box tr:first-child {
+    background-color: beige;
+}
+
+.list-box td {
     border-top: 1px solid gray;
 }
 
-.css-value-list th, td {
+.list-box th,
+.list-box td {
     padding: 10px;
     text-align: left;
 }

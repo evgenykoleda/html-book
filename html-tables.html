@@ -20,23 +20,25 @@
         </p>
 
         <h2>Оглавление</h2>
-        <ol class="article-table-of-contents">
-            <li>
-                <a href="#tags">Теги</a>
+        <div class="navigation-base">
+            <ol>
+                <li>
+                    <a href="#tags">Теги</a>
 
-                <ol>
-                    <li>
-                        <a href="#tags-example">Пример</a>
-                    </li>
-                </ol>
-            </li>
-            <li>
-                <a href="#attributes">Атрибуты</a>
-            </li>
-            <li>
-                <a href="#styles">Стили</a>
-            </li>
-        </ol>
+                    <ol>
+                        <li>
+                            <a href="#tags-example">Пример</a>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="#attributes">Атрибуты</a>
+                </li>
+                <li>
+                    <a href="#styles">Стили</a>
+                </li>
+            </ol>
+        </div>
 
         <h2 id="tags">Теги</h2>
         <p>
@@ -48,7 +50,7 @@
         </p>
 
         <h3 id="tags-example">Пример</h3>
-<pre class="html-code">
+<pre class="code-block">
 &lt;table&gt;
     &lt;caption&gt;Веб-технологии&lt;/caption&gt;
     &lt;tr&gt;
@@ -96,29 +98,31 @@
                 Применяется к тегу <code>&lt;table&gt;</code>.
             </dd>
             <dd>
-                <table class="css-value-list">
-                    <tr>
-                        <th>Значение</th>
-                        <th>Описание</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <code>separate</code>
-                        </td>
-                        <td>
-                            Рамки таблицы и ячеек отображаются отдельно.
-                            Значение по умолчанию.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <code>collapse</code>
-                        </td>
-                        <td>
-                            Рамки таблицы и ячеек накладываются друг на друга.
-                        </td>
-                    </tr>
-                </table>
+                <div class="list-box">
+                    <table>
+                        <tr>
+                            <th>Значение</th>
+                            <th>Описание</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>separate</code>
+                            </td>
+                            <td>
+                                Рамки таблицы и ячеек отображаются отдельно.
+                                Значение по умолчанию.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>collapse</code>
+                            </td>
+                            <td>
+                                Рамки таблицы и ячеек накладываются друг на друга.
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </dd>
 
             <dt>
@@ -137,34 +141,36 @@
                 Применяется к тегам <code>&lt;th&gt;</code>, <code>&lt;td&gt;</code> и <code>&lt;caption&gt;</code>.
             </dd>
             <dd>
-                <table class="css-value-list">
-                    <tr>
-                        <th>Значение</th>
-                        <th>Описание</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <code>left</code>
-                        </td>
-                        <td>Задает выравнивание текста по левому краю.</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <code>right</code>
-                        </td>
-                        <td>
-                            Задает выравнивание текста по правому краю.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <code>center</code>
-                        </td>
-                        <td>
-                            Задает выравнивание текста по центру.
-                        </td>
-                    </tr>
-                </table>
+                <div class="list-box">
+                    <table>
+                        <tr>
+                            <th>Значение</th>
+                            <th>Описание</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>left</code>
+                            </td>
+                            <td>Задает выравнивание текста по левому краю.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>right</code>
+                            </td>
+                            <td>
+                                Задает выравнивание текста по правому краю.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>center</code>
+                            </td>
+                            <td>
+                                Задает выравнивание текста по центру.
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </dd>
 
             <dt>
@@ -175,36 +181,38 @@
                 Применяется к тегам <code>&lt;th&gt;</code> и <code>&lt;td&gt;</code>.
             </dd>
             <dd>
-                <table class="css-value-list">
-                    <tr>
-                        <th>Значение</th>
-                        <th>Описание</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <code>top</code>
-                        </td>
-                        <td>
-                            Задает выравнивание текста по верхнему краю.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <code>bottom</code>
-                        </td>
-                        <td>
-                            Задает выравнивание текста по нижнему краю.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <code>middle</code>
-                        </td>
-                        <td>
-                            Задает выравнивание текста посередине.
-                        </td>
-                    </tr>
-                </table>
+                <div class="list-box">
+                    <table>
+                        <tr>
+                            <th>Значение</th>
+                            <th>Описание</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>top</code>
+                            </td>
+                            <td>
+                                Задает выравнивание текста по верхнему краю.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>bottom</code>
+                            </td>
+                            <td>
+                                Задает выравнивание текста по нижнему краю.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>middle</code>
+                            </td>
+                            <td>
+                                Задает выравнивание текста посередине.
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </dd>
 
             <dt>
@@ -215,28 +223,31 @@
                 Применяется к тегу <code>&lt;caption&gt;</code>.
             </dd>
             <dd>
-                <table class="css-value-list">
-                    <tr>
-                        <th>Значение</th>
-                        <th>Описание</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <code>top</code>
-                        </td>
-                        <td>
-                            Задает выравнивание заголовка над таблицей.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <code>bottom</code>
-                        </td>
-                        <td>
-                            Задает выравнивание заголовка под таблицей.
-                        </td>
-                    </tr>
-                </table>
+                <div class="list-box">
+                    <table>
+                        <tr>
+                            <th>Значение</th>
+                            <th>Описание</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>top</code>
+                            </td>
+                            <td>
+                                Задает выравнивание заголовка над таблицей.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>bottom</code>
+                            </td>
+                            <td>
+                                Задает выравнивание заголовка под таблицей.
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
             </dd>
 
             <dt>
@@ -258,8 +269,12 @@
         </dl>
     </div>
 
-    <a href="#heading">В начало</a>
-    <a href="index.html">На главную</a>
+    <div class="navigation-base">
+        <a href="#heading">В начало</a>
+    </div>
+    <div class="navigation-base">
+        <a href="index.html">На главную</a>
+    </div>
 
 </body>
 </html>
